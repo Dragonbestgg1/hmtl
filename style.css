@@ -1,12 +1,12 @@
-*{
+/* *{
     outline: 1px solid red;
-}
+} */
 html{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .main{
     display: flex;
@@ -14,8 +14,23 @@ html{
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
-    height: 100vh;
+    gap: 20px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, gray, white); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, violet, pink);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, lime, blueviolet); 
+}
+
 /* #region commads */
     .commands{
         display: flex;
@@ -23,6 +38,7 @@ html{
         align-items: center;
         justify-content: space-evenly;
         width: 90vw;
+        height: 100%;
     }
     .command{
         display: flex;
@@ -81,6 +97,80 @@ html{
         border: none;
         padding: 10px;
     }
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        height: 100%;
+        margin-top: 90px;
+    }
+    .timerBox{
+        display: flex;
+        width: 30vw;
+        height: 30vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 140, 232);
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    .boxStyle{
+        background-color: rgb(39, 140, 232);
+        width: 10vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .smallBox{
+        background-color: rgb(39, 140, 232);
+        width: 10vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 /* #endregion */
 /* #region files */
+    .files{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 90vw;
+    }
+    .file{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 20px;
+    }
+    .fileNameBox{
+        background-color: rgb(39, 140, 232);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+        height: 5vh;
+    }
+    .fileBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 140, 232);
+        width: 50vh;
+        height: 30vh;
+    }
+    .opacity{
+        opacity: 0;
+    }
 /* #endregion */
