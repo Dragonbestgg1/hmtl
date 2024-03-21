@@ -1,0 +1,86 @@
+*{
+    outline: 1px solid red;
+}
+html{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+/* #region commads */
+    .commands{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90vw;
+    }
+    .command{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .commandName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+    }
+    .commandNameContain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(39, 140, 232);
+    }
+    .score{
+        width: 100%;
+        height: 30vh;
+    }
+    .scoreContain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(39, 140, 232);
+        height: 100%;
+    }
+    .pointAdd{
+        display: flex;
+        align-items: center;
+        justify-content: fl;
+
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        gap: 0px;
+    }
+    .pointContain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%;
+    }
+    .pointContainButton{
+        background-color: rgb(39, 140, 232);
+        border: none;
+        padding: 10px;
+    }
+/* #endregion */
+/* #region files */
+/* #endregion */
