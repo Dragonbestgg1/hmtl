@@ -1,6 +1,6 @@
-/* *{
-    outline: 1px solid red;
-} */
+*{
+    cursor: default;
+}
 html{
     display: flex;
     align-items: center;
@@ -30,7 +30,9 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, lime, blueviolet); 
 }
-
+button{
+    cursor: pointer;
+}
 /* #region commads */
     .commands{
         display: flex;
